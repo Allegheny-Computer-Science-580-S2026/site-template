@@ -211,13 +211,14 @@ To build and preview the research journal website locally:
 
 To build and verify the junior seminar research report PDF locally:
 
-1. Navigate to the report directory:
+1. Orient towards the report directory for your work, but bear in mind that most
+   commands can be run from the root of this repository:
 
    ```bash
    cd report
    ```
 
-1. Render the research report as a PDF:
+1. From the root of this repository, render the research report as a PDF:
 
    ```bash
    quarto render index.qmd --to allegheny-cis-pdf
