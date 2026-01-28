@@ -1,35 +1,21 @@
 ---
-title: "ReadyResearchers Template"
+title: "Junior Seminar Research Journal"
 listing:
-  - id: posts
-    contents:
-      - posts/activity
-      - posts/reflection
-      - posts/feedback
-    sort: "date desc"
-    type: grid
-    categories: false
-    sort-ui: false
-    filter-ui: false
-    fields: [title, date, description, categories, word-count, image]
-  - id: changelogs
-    contents: posts/changelogs
-    sort: "date desc"
-    type: grid
-    categories: false
-    sort-ui: false
-    filter-ui: false
-    fields: [title, date, description, categories, word-count, image, "Thesis Version", "Artifact Version"]
+- id: posts
+contents:
+- posts/activity
+- posts/reflection
+sort: "date desc"
+type: grid
+categories: false
+sort-ui: false
+filter-ui: false
+fields: [title, date, description, categories, word-count, image]
 page-layout: full
 title-block-banner: true
 ---
 
-## Posts
+## Research Journal Entries
 
 :::{#posts}
-:::
-
-## Changelogs
-
-:::{#changelogs}
 :::
