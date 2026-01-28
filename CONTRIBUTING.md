@@ -27,7 +27,11 @@ properly released before the assignment's due date as specified in the
 GitHub Classroom page when you accept this assignment. Unless you provide
 the course instructor with documentation of the extenuating circumstances
 that you are facing, no late work will be considered towards your grade
-for this project.
+for this project. Each researcher is responsible for creating their own GitHub
+repositories for their prototype tool(s) and data sets. For each external
+repository that you create, please make sure to provide a reference to it
+inside of your research report and confirm that the course instructor can
+access it if you have decided not to make it public.
 
 ## Requirements
 
@@ -78,57 +82,57 @@ should accomplish as a part of the entire junior seminar research report.
 
 #### Introduction Section Requirements
 
-* **States** the problem addressed in this research
-* **Overviews** the project's aims and objectives
-* **Summarizes** the background motivating your research
-* **Highlights** the key contributions of the project
-* **Highlights** the ethical issues implied by the current state of the problem
-underlying the work
+- **States** the problem addressed in this research
+- **Overviews** the project's aims and objectives
+- **Summarizes** the background motivating your research
+- **Highlights** the key contributions of the project
+- **Highlights** the ethical issues implied by the current state of the problem
+  underlying the work
 
 #### Related Work Requirements
 
-* **Reviews** the relevant existing work (i.e., the "literature review")
-* **Furnishes** a concise, scholarly review of the literature explaining
-the background to the proposed research
-* **Provides** the context for the aims of the research in relation to
-existing work on the topic
-* **Places** the junior seminar research in the context of the relevant
-existing work
-* **Connects** to the ethical discussions referenced in the
-`Introduction`
+- **Reviews** the relevant existing work (i.e., the "literature review")
+- **Furnishes** a concise, scholarly review of the literature explaining
+  the background to the proposed research
+- **Provides** the context for the aims of the research in relation to
+  existing work on the topic
+- **Places** the junior seminar research in the context of the relevant
+  existing work
+- **Connects** to the ethical discussions referenced in the
+  `Introduction`
 
 #### Method Section Requirements
 
-* **Describes** the infrastructure and tools implemented to serve, test, and
-support research and conduct experiments
-* **Enumerates** the general processes and code used by the project with
-required technical content that would include, for instance, diagrams and/or
-code snippets and/or algorithm statements
-* **Addresses** the interventions that the research incorporates or develops to
-address ethical concerns in datasets, software processes, or theoretical
-approaches
+- **Describes** the infrastructure and tools implemented to serve, test, and
+  support research and conduct experiments
+- **Enumerates** the general processes and code used by the project with
+  required technical content that would include, for instance, diagrams and/or
+  code snippets and/or algorithm statements
+- **Addresses** the interventions that the research incorporates or develops to
+  address ethical concerns in datasets, software processes, or theoretical
+  approaches
 
 #### Experimental Results Requirements
 
-* **Displays and discusses** evaluative metrics and data used as validation
-strategies the projects
-* **Defines** the thresholds for success, and discusses the outcomes of
-experiments relative to them
-* **Explores** the trade-offs evident in the experimental results, leverages
-previously defined metrics about, for instance, efficiency and/or effectiveness
-* **Uses** techniques such as statistics and/or data visualizations to highlight
-the key trends in the experimental results
-* **Discusses** any threats to validity that remain from the original summary of
-the research or those introduced by any approaches or data used in the these
-research and implementation process
+- **Displays and discusses** evaluative metrics and data used as validation
+  strategies the projects
+- **Defines** the thresholds for success, and discusses the outcomes of
+  experiments relative to them
+- **Explores** the trade-offs evident in the experimental results, leverages
+  previously defined metrics about, for instance, efficiency and/or effectiveness
+- **Uses** techniques such as statistics and/or data visualizations to highlight
+  the key trends in the experimental results
+- **Discusses** any threats to validity that remain from the original summary of
+  the research or those introduced by any approaches or data used in the these
+  research and implementation process
 
 #### Conclusion and Future Work Requirements
 
 - **Summarizes** your research and experimental outcomes proposes
 - **Proposes**, where applicable, future areas of work or research indicated by
-the conclusion of this research
+  the conclusion of this research
 - **Furnishes** an evidence- or results-based appraisal of ethical issues left
-unresolved or created by this research
+  unresolved or created by this research
 
 ### Gauging Your Level of Achievement
 
@@ -142,45 +146,45 @@ your achievement may look like in any of the following scenarios.
 
 Exceptional projects share the following features:
 
-* the research report is _comprehensive_, with well-developed chapters that
-thoroughly explore the research topic (each chapter 7+ pages)
-* the report displays a clear grasp of the relevant literature (engaging `15`+
-sources of high disciplinary quality)
-* discussion of ethical and technical imperatives occur throughout the chapters,
-often reinforcing or relating to prior topics of discussion in the introduction
-and/or related work
-* the project discusses, coordinates, and relates sources to each other in both
-complementary and contradictory ways, often highlighting or at least attempting
-to resolve conflicts where they arise
-* the methodology behind the project is clear, often using multiple diagrams to
-discuss structure and relationships of the various parts of the related artifact
-* experiments show sound methods that, even if generating unsupportive data, are
-discussed with critical reflection and clear demonstration of opportunities,
-faults, and/or successes with reference to how this changed/changes the project
-as a whole
-* future work clearly grapples with the tasks left undone and the project's
-impact on the larger computational communities in which it participates
+- the research report is _comprehensive_, with well-developed chapters that
+  thoroughly explore the research topic (each chapter 7+ pages)
+- the report displays a clear grasp of the relevant literature (engaging `15`+
+  sources of high disciplinary quality)
+- discussion of ethical and technical imperatives occur throughout the chapters,
+  often reinforcing or relating to prior topics of discussion in the introduction
+  and/or related work
+- the project discusses, coordinates, and relates sources to each other in both
+  complementary and contradictory ways, often highlighting or at least attempting
+  to resolve conflicts where they arise
+- the methodology behind the project is clear, often using multiple diagrams to
+  discuss structure and relationships of the various parts of the related artifact
+- experiments show sound methods that, even if generating unsupportive data, are
+  discussed with critical reflection and clear demonstration of opportunities,
+  faults, and/or successes with reference to how this changed/changes the project
+  as a whole
+- future work clearly grapples with the tasks left undone and the project's
+  impact on the larger computational communities in which it participates
 
 ### Above average work (B- to B+)
 
 Above average projects may be described as:
 
-* _solid_, with chapters meeting the 5-7 page target and demonstrating good
-understanding of the research topic
-* displaying a grasp of much, but not all, relevant literature (engaging `10`+
-sources of moderate disciplinary quality or authority)
-* discussion of ethical and technical imperatives occur in more than one or two
-chapters, but may remain unresolved or unaddressed
-* the project discusses, coordinates, and relates sources to each other without
-necessarily recognizing conflicts or areas of contradiction
-* the methodology behind the project is clear, though there remain some
-questions about project operations, security, or design
-* experiments demonstrate effort in developing results, though the conversation
-around them does not provide reflective inquiry into faults or successes and
-their causes/effects
-* future work names and discusses tasks remaining undone and the ethical issues
-raised by the research, but does not suggest how these relate to the larger
-communities in which the project traffics
+- _solid_, with chapters meeting the 5-7 page target and demonstrating good
+  understanding of the research topic
+- displaying a grasp of much, but not all, relevant literature (engaging `10`+
+  sources of moderate disciplinary quality or authority)
+- discussion of ethical and technical imperatives occur in more than one or two
+  chapters, but may remain unresolved or unaddressed
+- the project discusses, coordinates, and relates sources to each other without
+  necessarily recognizing conflicts or areas of contradiction
+- the methodology behind the project is clear, though there remain some
+  questions about project operations, security, or design
+- experiments demonstrate effort in developing results, though the conversation
+  around them does not provide reflective inquiry into faults or successes and
+  their causes/effects
+- future work names and discusses tasks remaining undone and the ethical issues
+  raised by the research, but does not suggest how these relate to the larger
+  communities in which the project traffics
 
 ### Average work (C- to C+)
 
