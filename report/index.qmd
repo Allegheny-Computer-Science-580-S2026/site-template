@@ -28,7 +28,7 @@ author:
       postal-code: 16335
 
 abstract: |
-  A well-researched student project. Like very.
+  A well-researched student project completed during the Junior Seminar.
 ---
 
 # Template description
