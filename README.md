@@ -3,13 +3,13 @@
 [![Build Research Journal Site](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml)
 [![Release Junior Seminar Research Report](../../actions/workflows/release.yml/badge.svg)](../../actions/workflows/release.yml)
 
-For more information about the course requirements for your Junior
-Seminar course in Computer and Information Science, please refer to the
-syllabus for your course. To enable you to complete many of the
+For more information about the course requirements for your Junior Seminar
+course in Computer and Information Science, please ask the course instructor and
+refer to the syllabus for your course. To enable you to complete many of the
 deliverables for the Junior Seminar course, this repository contains
-instructions for your research journal and your junior seminar research
-report. Quarto, serving as a build system for your site, will build your
-research report as a website and a PDF.
+instructions for your research journal and your junior seminar research report.
+Quarto, serving as a build system for your site, will build your research report
+as a website and a PDF.
 
 ## Course Requirements
 
@@ -27,15 +27,15 @@ responsible for writing the following seven research journal entries:
    brainstorming your idea and then prototyping and presenting it? Reflect on
    the challenges and successes.
 1. **Chapter 1 and 2 Reflections**: Combined post reflecting on:
-   - What is your reflection from writing Chapter 1: Introduction
-   - What is your reflection from writing Chapter 2: Background Related Work
+   - Reflection from writing Chapter 1: Introduction
+   - Reflection from writing Chapter 2: Background Related Work
 1. **Chapter 3 and 4 Reflections**: Combined post reflecting on:
-   - What is your reflection from writing Chapter 3: Methodology
-   - What is your reflection from writing Chapter 4: Results
-1. **Chapter 5 Reflection**: What is your reflection from writing Chapter 5:
+   - Reflection from writing Chapter 3: Methodology
+   - Reflection from writing Chapter 4: Results
+1. **Chapter 5 Reflection**: Overall reflection from writing Chapter 5:
    Conclusions and Future Work
-1. **Overall Project Reflection**: What is your overall reflection on the
-   research project and what are your next steps?
+1. **Overall Project Reflection**: Overall reflection on the
+   research project and identification of your next steps
 
 ### Junior Seminar Research Report Chapters
 
