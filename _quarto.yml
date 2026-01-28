@@ -10,11 +10,11 @@ author:
   - name: A. Student
     email: astudent@allegheny.edu
 website:
-  title: "ReadyResearchers Template"
+  title: "Junior Seminar Research Journal"
   navbar:
     right:
-      - text: "Senior Thesis"
-        href: thesis/index.qmd
+      - text: "Junior Seminar Research Report"
+        href: report/index.qmd
       - about.qmd
       - icon: github
         href: https://github.com/
