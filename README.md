@@ -1,65 +1,65 @@
-# CMPSC 600 Senior Comprehensive Project
+# Junior Seminar Research Project
 
 [![Build Research Journal Site](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml)
-[![Release Senior Thesis](../../actions/workflows/release.yml/badge.svg)](../../actions/workflows/release.yml)
+[![Release Junior Seminar Research Report](../../actions/workflows/release.yml/badge.svg)](../../actions/workflows/release.yml)
 
-For more information about the course requirements for your 600-level course in
+For more information about the course requirements for your Junior Seminar course in
 Computer and Information Science, please refer to the syllabus for your course.
-To enable you to complete many of the deliverables for the 600-level course,
-this repository contain contains instructions for your research journal and your
-senior thesis document. Quarto, serving as a build system for your site, will
-build your thesis document as a website and a PDF.
+To enable you to complete many of the deliverables for the Junior Seminar course,
+this repository contains instructions for your research journal and your
+junior seminar research report. Quarto, serving as a build system for your site, will
+build your research report as a website and a PDF.
 
 ## Course Requirements
 
 ### Research Journal
 
-Your research journal contains short posts in one of the following categories:
-`reflection`, `feedback`, `activity`, and `changelog`. For the Fall 2025
-semester, you are responsible for writing the following posts:
+Your research journal contains posts reflecting on your experiences completing
+your junior seminar research project. For the Spring 2026 semester, you are
+responsible for writing the following seven research journal entries:
 
-- Two `reflection` posts:
-    - Reflect on the current version of your computational artifact
-    - Reflect on your experiences preparing for and giving your presentation
-- Three `activity` posts:
-    - State and explain the title of your senior comprehensive project
-    - Provide and justify the outline for Chapter One of your senior thesis
-    - Provide and justify the outline for Chapter Two of your senior thesis
-- One `feedback` post:
-    - Offer feedback to both your classmates and your instructors on work in the
-      600-level course in Computer and Information Science
-- One `changelog` post:
-    - Summarize all work completed leading up to a `1.0` release of your senior
-    comprehensive project that is visible through a website hosted on GitHub
-    pages and a release of your senior thesis as a PDF document through the
-    `Releases` tab inside of your GitHub repository
+1. **Research Idea**: What is your research idea? Describe the problem you plan
+   to investigate and your initial approach.
+1. **Prototype Installation and Use**: How do you install and use your research
+   prototype? Provide clear instructions and documentation.
+1. **Brainstorming and Prototyping Experience**: What were your experiences with
+   brainstorming your idea and then prototyping and presenting it? Reflect on
+   the challenges and successes.
+1. **Chapter 1 and 2 Reflections**: Combined post reflecting on:
+   - What is your reflection from writing Chapter 1: Introduction
+   - What is your reflection from writing Chapter 2: Background Related Work
+1. **Chapter 3 and 4 Reflections**: Combined post reflecting on:
+   - What is your reflection from writing Chapter 3: Methodology
+   - What is your reflection from writing Chapter 4: Results
+1. **Chapter 5 Reflection**: What is your reflection from writing Chapter 5:
+   Conclusions and Future Work
+1. **Overall Project Reflection**: What is your overall reflection on the
+   research project and what are your next steps?
 
-Your writing assignments for the 610-level course will be released during the
-upcoming Spring 2026 semester.
+### Junior Seminar Research Report Chapters
 
-### Senior Thesis Chapters
+All researchers in the Junior Seminar course in Computer and Information Science
+must document their work in the form of a written research report. While
+variations on the typical structure and contents of a research report can be
+specific to a certain project, a typical Computer and Information Science
+research report contains `5` chapters:
 
-All researchers in the 600-level course in Computer and Information Science must
-document their work in the form of a written thesis. While variations on the
-typical structure and contents of a thesis can be specific to a certain project,
-a typical Computer and Information Science thesis contains `5` sections:
+1. Introduction
+1. Related Work
+1. Methods
+1. Experiments (Results)
+1. Conclusions and Future Work
 
- 1. Introduction
- 2. Related Work
- 3. Methods
- 4. Experiments
- 5. Future Work
-
-As outlined on the course syllabus, during the `600` semester course, students
-complete Chapters `1` and `2` for review by their reader(s). More details
-about the baseline requirements for the senior thesis document are available
+Students complete all five chapters during the Spring 2026 semester. Each
+chapter should be approximately **5 to 7 pages** in length. More details about
+the baseline requirements for the junior seminar research report are available
 in the course syllabus and in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 ## Course Technology Use
 
 ### Enabling Site Build
 
-This site deploys via Github Pages using the Quarto static site building system.
+This site deploys via GitHub Pages using the Quarto static site building system.
 
 1. Go to the `Settings` menu on this repository and locate the `Pages` submenu.
 
@@ -89,55 +89,55 @@ Tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
 This will build a PDF file available in the "Releases" listing for this
 repository. All release numbers for your writing in this repository should
-adhere to the [Semantic Versioning](http://semver.org/) standard expected of
+adhere to the [Semantic Version](http://semver.org/) standard expected of
 GitHub projects. Here this means that:
 
-* `Major version` releases feature a tag number change reflecting full
-releases; generally these start at `1.0.0`
-* `Minor version` releases indicate small changes or additions to documents;
-typically these increment the second digit in the version (e.g. `1.1.0`)
+- `Major version` releases feature a tag number change reflecting full
+  releases; generally these start at `1.0.0`
+- `Minor version` releases indicate small changes or additions to documents;
+  typically these increment the second digit in the version (e.g. `1.1.0`)
 
-Please note that your readers will only read the PDF generated from "tagged"
-releases of the file `SeniorThesis.pdf` that has a version number greater than
-1.0.0.
+Please note that your instructor will primarily read the PDF generated from
+"tagged" releases of the file `JuniorSeminarReport.pdf` that has a version
+number greater than 1.0.0.
 
 That is:
 
-* if your commit is tagged `SeniorThesis-1.0.0`, then
-* the file `SeniorThesis.pdf` should be available for download in the
-"Releases" tab in your GitHub repository for this project under the name
-`SeniorThesis-1.0.0`.
+- if your commit is tagged `JuniorSeminarReport-1.0.0`, then
+- the file `JuniorSeminarReport.pdf` should be available for download in the
+  "Releases" tab in your GitHub repository for this project under the name
+  `JuniorSeminarReport-1.0.0`.
 
 To ensure you can create a release appropriately, make a single small change to
 the `thesis/index.qmd` and:
 
 1. Use `git` to `commit` your file changes using a `git commit` command
-2. Create your first tag for this repository: type `git tag
-   senior_thesis-0.1.0`.
-3. You are now ready to push your changes with the tag number using  `git push
-   -u origin main --tags`
+1. Create your first tag for this repository: type `git tag junior_seminar_report-0.1.0`.
+1. You are now ready to push your changes with the tag number using `git push -u origin main --tags`
 
 The above steps should build a version of your project and release it on GitHub!
-If something does not work correctly, please contact your first and second
-readers and/or the senior thesis faculty coordinator to explain the details of
-the challenges that you faced. It is also important to note that it is possible
-for a student to perform a manual release of the PDF of their senior thesis
-chapters. Again, please communicate with your first and/or second readers and/or
-the senior thesis faculty coordinator for more information about the steps you
+If something does not work correctly, please contact Professor Gregory M.
+Kapfhammer to explain the details of the challenges that you faced. You can
+schedule an office hours appointment at:
+[https://www.gregorykapfhammer.com/schedule/](https://www.gregorykapfhammer.com/schedule/)
+
+It is also important to note that it is possible for a student to perform a
+manual release of the PDF of their junior seminar research report. Again, please
+communicate with Professor Kapfhammer for more information about the steps you
 would take to perform a manual release. With that said, it is important to
-stress that you should learn how to perform an automated release of your thesis
+stress that you should learn how to perform an automated release of your report
 in PDF and only use the manual approach if there is a severe and extenuating
 circumstance (e.g., GitHub Actions stops working for a short time) that prevents
 you from performing an automated release.
 
 When you make subsequent changes to your files and perform commits and you are
-ready to release a new version of `SeniorThesis.pdf`, then you should
+ready to release a new version of `JuniorSeminarReport.pdf`, then you should
 again tag your work _before a `push` command_ with a tag that
 adheres to the [Semantic Versioning](http://semver.org/) standard.
 
 Each time that you correctly execute this sequence of commands you will release
 a new version of your document to GitHub that is easily accessible as a PDF to
-you and to your first and second readers.
+you and to your instructor.
 
 While you are able to build copies of your PDF locally using the `quarto render`
 command, the only copy that will be evaluated is that released to GitHub following
@@ -146,10 +146,14 @@ the procedure outlined above.
 ## Seeking Assistance
 
 If you are having trouble completing any part of this project, then please talk
-with your first reader, second reader, or the coordinator for your 600-level
-course. In particular, if you have questions about your research project, please
-see your first reader. Students who want to learn more about [Managing
-releases in a GitHub
+with Professor Gregory M. Kapfhammer. In particular, if you have questions about
+your research project, please see Professor Kapfhammer during office hours or
+schedule an appointment at:
+
+- **Professor Website**: [https://www.gregorykapfhammer.com/](https://www.gregorykapfhammer.com/)
+- **Office Hours Scheduling**: [https://www.gregorykapfhammer.com/schedule/](https://www.gregorykapfhammer.com/schedule/)
+
+Students who want to learn more about [Managing releases in a GitHub
 repository](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)
 or other topics related to release management on GitHub are encouraged to check
 the [GitHub Releases
