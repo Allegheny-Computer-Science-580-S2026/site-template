@@ -97,9 +97,13 @@ GitHub projects. Here this means that:
 - `Minor version` releases indicate small changes or additions to documents;
   typically these increment the second digit in the version (e.g. `1.1.0`)
 
-Please note that your instructor will primarily read the PDF generated from
+Please note that your instructor will expect that the PDF generated from
 "tagged" releases of the file `JuniorSeminarReport.pdf` that has a version
-number greater than 1.0.0.
+number greater than `1.0.0` if it contains a final version of Chapter 1. It
+should then contain a version number greater than `2.0.0` if it contains a
+final version of Chapter 2 and so on. The idea is that each major release of
+your junior seminar research project should contain a final version of the
+chapter that is signaled by the semantic version number.
 
 That is:
 
