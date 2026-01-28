@@ -147,6 +147,137 @@ While you are able to build copies of your PDF locally using the `quarto render`
 command, the only copy that will be evaluated is that released to GitHub following
 the procedure outlined above.
 
+## Local Testing and Development
+
+Before pushing your work to GitHub, you can test both the website and PDF
+compilation locally to catch any errors early. This section explains how to build
+and preview your work on your local machine.
+
+### Prerequisites
+
+To build and test locally, you need to have the following installed:
+
+- **Quarto**: Download and install from [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
+- **Python 3.x**: For various build tools (often already installed on most systems)
+- **LaTeX Distribution**: Required for PDF generation
+  - **Windows**: Install [MiKTeX](https://miktex.org/)
+  - **macOS**: Install [MacTeX](https://www.tug.org/mactex/)
+  - **Linux**: Install TeX Live via your package manager (e.g., `sudo apt install texlive-full`)
+  - **Any OS**: Alternatively, use TinyTeX via Quarto: `quarto install tinytex`
+
+### Testing the Research Journal Website
+
+To build and preview the research journal website locally:
+
+1. Open a terminal and navigate to the root of your repository:
+
+   ```bash
+   cd path/to/your/repository
+   ```
+
+1. Render the entire website:
+
+   ```bash
+   quarto render
+   ```
+
+   This command will:
+
+   - Build all journal entries and pages
+   - Generate the website in the `_site` directory
+   - Report any errors in your Markdown or configuration
+
+1. Preview the website in your browser:
+
+   ```bash
+   quarto preview
+   ```
+
+   This will:
+
+   - Start a local web server
+   - Open your browser to view the site (typically at `http://localhost:XXXX`)
+   - Automatically refresh when you make changes to files
+
+1. If you encounter errors:
+
+   - Check the terminal output for specific error messages
+   - Verify that all `.qmd` files have valid YAML front matter (enclosed in `---`)
+   - Ensure all images referenced in posts exist in the correct locations
+   - Check that dates in posts are formatted correctly: `YYYY-MM-DD`
+
+### Testing the Research Report PDF
+
+To build and verify the junior seminar research report PDF locally:
+
+1. Navigate to the thesis directory:
+
+   ```bash
+   cd thesis
+   ```
+
+1. Render the research report as a PDF:
+
+   ```bash
+   quarto render index.qmd --to allegheny-cis-pdf
+   ```
+
+   This command will:
+
+   - Compile all chapter files (`_introduction.qmd`, `_related_work.qmd`, etc.)
+   - Generate a PDF using the Allegheny College CIS template
+   - Create the output in `_site/thesis/index.pdf`
+
+1. View the generated PDF:
+
+   - The PDF will be located at: `_site/thesis/index.pdf`
+   - Open this file with your PDF viewer to verify the output
+
+1. If you encounter LaTeX errors:
+
+   - Check that all citations in `references.bib` are properly formatted
+   - Verify that all images in `thesis/images/` are in supported formats (PNG, JPG, PDF)
+   - Ensure all cross-references to figures and tables are correct
+   - Check that special LaTeX characters are properly escaped
+
+### Testing Both Website and PDF Together
+
+To test the complete build (both website and PDF):
+
+1. From the root directory, run:
+
+   ```bash
+   quarto render
+   quarto render thesis/index.qmd --to allegheny-cis-pdf
+   ```
+
+1. Check the outputs:
+
+   - Website: `_site/index.html` (open in browser)
+   - Research Report PDF: `_site/thesis/index.pdf`
+
+### Continuous Preview During Development
+
+For the best development experience, you can keep a preview running while you work:
+
+1. In one terminal, run:
+
+   ```bash
+   quarto preview
+   ```
+
+1. Edit your files in your preferred text editor
+
+1. Save your changes, and the preview will automatically refresh
+
+1. When ready to test the PDF, open a second terminal and run:
+
+   ```bash
+   quarto render thesis/index.qmd --to allegheny-cis-pdf
+   ```
+
+This workflow allows you to catch errors quickly and see your changes immediately.
+
 ## Seeking Assistance
 
 If you are having trouble completing any part of this project, then please talk
