@@ -24,3 +24,6 @@ site_libs/
 
 # HTML files
 *.html
+
+# Planning files
+PLAN.md
