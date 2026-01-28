@@ -1,8 +1,8 @@
-name: Release Senior Thesis
+name: Release Junior Seminar Research Report
 on:
   push:
     tags:
-      - '*.*.*'
+      - "*.*.*"
 
 jobs:
   # Build job
@@ -26,14 +26,14 @@ jobs:
         if: always()
       - name: Render the PDF
         run: |
-          quarto render thesis/index.qmd --to allegheny-cis-pdf
-          cp _site/thesis/index.pdf _site/thesis/SeniorThesis.pdf
+          quarto render report/index.qmd --to allegheny-cis-pdf
+          cp _site/report/index.pdf _site/report/JuniorSeminarReport.pdf
         if: always()
       - name: Create release
         id: create-release
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            _site/thesis/SeniorThesis.pdf
+            _site/report/JuniorSeminarReport.pdf
           token: ${{ secrets.GITHUB_TOKEN }}
           make_latest: true
