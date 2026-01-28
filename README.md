@@ -3,12 +3,13 @@
 [![Build Research Journal Site](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml)
 [![Release Junior Seminar Research Report](../../actions/workflows/release.yml/badge.svg)](../../actions/workflows/release.yml)
 
-For more information about the course requirements for your Junior Seminar course in
-Computer and Information Science, please refer to the syllabus for your course.
-To enable you to complete many of the deliverables for the Junior Seminar course,
-this repository contains instructions for your research journal and your
-junior seminar research report. Quarto, serving as a build system for your site, will
-build your research report as a website and a PDF.
+For more information about the course requirements for your Junior
+Seminar course in Computer and Information Science, please refer to the
+syllabus for your course. To enable you to complete many of the
+deliverables for the Junior Seminar course, this repository contains
+instructions for your research journal and your junior seminar research
+report. Quarto, serving as a build system for your site, will build your
+research report as a website and a PDF.
 
 ## Course Requirements
 
@@ -113,7 +114,7 @@ That is:
   `JuniorSeminarReport-1.0.0`.
 
 To ensure you can create a release appropriately, make a single small change to
-the `thesis/index.qmd` and:
+the `report/index.qmd` and:
 
 1. Use `git` to `commit` your file changes using a `git commit` command
 1. Create your first tag for this repository: type `git tag junior_seminar_report-0.1.0`.
@@ -210,10 +211,10 @@ To build and preview the research journal website locally:
 
 To build and verify the junior seminar research report PDF locally:
 
-1. Navigate to the thesis directory:
+1. Navigate to the report directory:
 
    ```bash
-   cd thesis
+   cd report
    ```
 
 1. Render the research report as a PDF:
@@ -226,17 +227,17 @@ To build and verify the junior seminar research report PDF locally:
 
    - Compile all chapter files (`_introduction.qmd`, `_related_work.qmd`, etc.)
    - Generate a PDF using the Allegheny College CIS template
-   - Create the output in `_site/thesis/index.pdf`
+   - Create the output in `_site/report/index.pdf`
 
 1. View the generated PDF:
 
-   - The PDF will be located at: `_site/thesis/index.pdf`
+   - The PDF will be located at: `_site/report/index.pdf`
    - Open this file with your PDF viewer to verify the output
 
 1. If you encounter LaTeX errors:
 
    - Check that all citations in `references.bib` are properly formatted
-   - Verify that all images in `thesis/images/` are in supported formats (PNG, JPG, PDF)
+   - Verify that all images in `report/images/` are in supported formats (PNG, JPG, PDF)
    - Ensure all cross-references to figures and tables are correct
    - Check that special LaTeX characters are properly escaped
 
@@ -248,13 +249,13 @@ To test the complete build (both website and PDF):
 
    ```bash
    quarto render
-   quarto render thesis/index.qmd --to allegheny-cis-pdf
+   quarto render report/index.qmd --to allegheny-cis-pdf
    ```
 
 1. Check the outputs:
 
    - Website: `_site/index.html` (open in browser)
-   - Research Report PDF: `_site/thesis/index.pdf`
+   - Research Report PDF: `_site/report/index.pdf`
 
 ### Continuous Preview During Development
 
@@ -273,10 +274,72 @@ For the best development experience, you can keep a preview running while you wo
 1. When ready to test the PDF, open a second terminal and run:
 
    ```bash
-   quarto render thesis/index.qmd --to allegheny-cis-pdf
+   quarto render report/index.qmd --to allegheny-cis-pdf
    ```
 
 This workflow allows you to catch errors quickly and see your changes immediately.
+
+## Repository Structure
+
+This repository is organized to support both your research journal website and
+your research report PDF. Understanding the structure will help you navigate and
+maintain your project effectively.
+
+### Top-Level Directories and Files
+
+- **`report/`**: Contains all files related to your junior seminar research report
+  - `index.qmd`: Main report configuration file (title, authors, bibliography)
+  - `_introduction.qmd`: Chapter 1 - Introduction
+  - `_related_work.qmd`: Chapter 2 - Related Work
+  - `_methods.qmd`: Chapter 3 - Methods
+  - `_experiments.qmd`: Chapter 4 - Experimental Results
+  - `_conclusion.qmd`: Chapter 5 - Conclusions and Future Work
+  - `references.bib`: Bibliography file for all citations
+  - `images/`: Directory for figures and diagrams used in the report
+
+- **`posts/`**: Contains all journal entries organized by category
+  - `activity/`: Activity-based journal entries (research planning, prototyping)
+    - `journal-entry-1.qmd`: Research Idea
+    - `journal-entry-2.qmd`: Prototype Installation and Use
+    - `journal-entry-3.qmd`: Brainstorming and Prototyping Experience
+  - `reflection/`: Reflection-based journal entries (chapter reflections)
+    - `journal-entry-4.qmd`: Chapters 1 and 2 Reflections
+    - `journal-entry-5.qmd`: Chapters 3 and 4 Reflections
+    - `journal-entry-6.qmd`: Chapter 5 Reflection
+    - `journal-entry-7.qmd`: Overall Project Reflection
+
+- **`.github/workflows/`**: GitHub Actions automation
+  - `main.yml`: Builds and deploys the website to GitHub Pages on every push
+  - `release.yml`: Builds and releases the PDF when you create a version tag
+
+- **`_extensions/`**: Contains the Allegheny CIS LaTeX template
+  - Used automatically by Quarto to format your research report PDF
+
+- **Configuration Files**:
+  - `_quarto.yml`: Main Quarto configuration for website appearance and behavior
+  - `about.qmd`: About page with instructor contact information
+  - `index.qmd`: Homepage of your research journal website
+  - `CONTRIBUTING.md`: Guidelines for writing your research report
+  - `README.md`: This file - project documentation
+
+### Generated Directories (Do Not Commit)
+
+- **`_site/`**: Generated website and PDF output (created when you run `quarto
+  render`)
+  - `index.html`: Website homepage
+  - `report/index.pdf`: Your research report PDF
+  - Other HTML files for each journal entry and page
+
+- **`.quarto/`**: Quarto cache directory (improves build speed)
+
+### Where to Edit
+
+- **For journal entries**: Edit files in `posts/activity/` or `posts/reflection/`
+- **For research report**: Edit chapter files in `report/` directory
+- **For website appearance**: Modify `_quarto.yml` configuration
+- **For citations**: Add BibTeX entries to `report/references.bib`
+- **For images**: Place files in `report/images/` and reference them in your
+  chapters
 
 ## Seeking Assistance
 

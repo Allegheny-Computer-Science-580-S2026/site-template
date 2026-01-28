@@ -5,4 +5,4 @@
 freeze: true
 
 # Lock all posts in this folder to a given category
-categories: [🧠 reflection]
+categories: [reflection]
