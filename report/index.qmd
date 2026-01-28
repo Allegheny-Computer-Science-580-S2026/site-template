@@ -13,7 +13,7 @@ natbiboptions: numbers
 title: Junior Seminar Research Report Title
 
 firstreader: Professor Gregory M. Kapfhammer
-secondreader: Second Reader
+secondreader: Student Second Reader
 
 bibliography: references.bib
 
