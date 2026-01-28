@@ -138,7 +138,7 @@ you from performing an automated release.
 When you make subsequent changes to your files and perform commits and you are
 ready to release a new version of `JuniorSeminarReport.pdf`, then you should
 again tag your work _before a `push` command_ with a tag that
-adheres to the [Semantic Versioning](http://semver.org/) standard.
+adheres to the [Semantic Version](http://semver.org/) standard.
 
 Each time that you correctly execute this sequence of commands you will release
 a new version of your document to GitHub that is easily accessible as a PDF to
@@ -288,6 +288,7 @@ maintain your project effectively.
 ### Top-Level Directories and Files
 
 - **`report/`**: Contains all files related to your junior seminar research report
+
   - `index.qmd`: Main report configuration file (title, authors, bibliography)
   - `_introduction.qmd`: Chapter 1 - Introduction
   - `_related_work.qmd`: Chapter 2 - Related Work
@@ -298,6 +299,7 @@ maintain your project effectively.
   - `images/`: Directory for figures and diagrams used in the report
 
 - **`posts/`**: Contains all journal entries organized by category
+
   - `activity/`: Activity-based journal entries (research planning, prototyping)
     - `journal-entry-1.qmd`: Research Idea
     - `journal-entry-2.qmd`: Prototype Installation and Use
@@ -309,13 +311,16 @@ maintain your project effectively.
     - `journal-entry-7.qmd`: Overall Project Reflection
 
 - **`.github/workflows/`**: GitHub Actions automation
+
   - `main.yml`: Builds and deploys the website to GitHub Pages on every push
   - `release.yml`: Builds and releases the PDF when you create a version tag
 
 - **`_extensions/`**: Contains the Allegheny CIS LaTeX template
+
   - Used automatically by Quarto to format your research report PDF
 
 - **Configuration Files**:
+
   - `_quarto.yml`: Main Quarto configuration for website appearance and behavior
   - `about.qmd`: About page with instructor contact information
   - `index.qmd`: Homepage of your research journal website
@@ -324,8 +329,8 @@ maintain your project effectively.
 
 ### Generated Directories (Do Not Commit)
 
-- **`_site/`**: Generated website and PDF output (created when you run `quarto
-  render`)
+- **`_site/`**: Generated website and PDF output (created when you run `quarto render`)
+
   - `index.html`: Website homepage
   - `report/index.pdf`: Your research report PDF
   - Other HTML files for each journal entry and page
