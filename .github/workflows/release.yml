@@ -26,9 +26,7 @@ jobs:
         if: always()
       - name: Render the PDF
         run: |
-          cd report
-          quarto render index.qmd --to allegheny-cis-pdf
-          cd ..
+          quarto render report/index.qmd --to allegheny-cis-pdf
           cp _site/report/index.pdf _site/report/JuniorSeminarReport.pdf
         if: always()
       - name: Create release
